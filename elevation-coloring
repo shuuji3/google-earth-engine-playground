@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var imageVisParam = {"opacity":1,"bands":["elevation"],"min":0,"max":5000,"palette":["ffae49","04aeff","ff1677"]};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var image = ee.Image('CGIAR/SRTM90_V4')
+Map.setCenter(-112.8598, 36.2841,9)
+Map.addLayer(image, imageVisParam)
